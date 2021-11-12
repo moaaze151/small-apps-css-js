@@ -127,3 +127,48 @@ h1 {
   border-radius: 5px;
   transition: all 0.5s ease-in-out;
 }
+
+/* (4) fill background 444444444444444444  */
+.fill-box {
+  margin: 20px auto;
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  border: 2px solid #ff5151;
+  padding: 25px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.fill-num {
+  width: 50px;
+  height: 50px;
+  background: #ff5151;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.fill-box:hover .fill-num {
+  box-shadow: 0 0 0 350px #ff5151;
+}
+.fill-title {
+  color: #2b2929;
+  margin-bottom: 7px;
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  transition: all 0.7s ease-in-out;
+}
+.fill-info {
+  color: #4e4b4b;
+  font-size: 1.1rem;
+  font-family: sans-serif;
+  line-height: 1.6;
+  transition: all 0.7s ease-in-out;
+}
+.fill-box:hover .fill-title,
+.fill-box:hover .fill-info {
+  color: #fff;
+}
