@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  margin: 15px;
+}
+/* (1) tabes 1111111111111111111111111111111111111111 */
+.tab {
+  width: 500px;
+  margin: 25px auto;
+  background-color: #d8d7d7;
+  padding: 15px;
+}
+.title-tab {
+  background-color: brown;
+  color: #fff;
+  display: inline-block;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+.tabes {
+  display: flex;
+  margin-top: 15px;
+  background-color: #fff;
+  padding: 10px;
+}
+.tabes li {
+  padding: 5px 10px;
+  background-color: #f3efef;
+  font-size: 1.3rem;
+  margin-right: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.6s ease-in-out;
+}
+.tabes li.active {
+  background-color: brown;
+  color: #fff;
+}
+.tabes li:hover {
+  background-color: brown;
+  color: #fff;
+}
+.tabes li span {
+  font-size: 1rem;
+}
+.content {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 10px;
+}
+.content div:not(:nth-of-type(1)) {
+  display: none;
+  background: ;
+}
+/*(2) custom radio 222222222222222222222222222222222222 */
+.custom-radio {
+  width: 500px;
+  margin: 25px auto;
+  background-color: #d8d7d7;
+  padding: 35px 0;
+}
+.custom-radio form {
+  width: 400px;
+  margin: 15px auto;
+  background-color: #fff;
+  padding: 5px 25px;
+}
+.custom-radio form div {
+  padding: 5px 0;
+}
+.custom-radio form input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom-radio form label {
+  position: relative;
+  padding-left: 3px;
+}
+.custom-radio form label::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: -50%;
+  transform: translateY(50%);
+  left: -22px;
+  background: #ffffff;
+  border: 1px solid #057eff;
+  cursor: pointer;
+}
+.custom-radio form input[type="radio"]:checked + label::after,
+.custom-radio form input[type="radio"]:not(:checked):hover + label::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 4.5px;
+  left: -18px;
+  background: #057eff;
+  cursor: pointer;
+}
+.custom-radio form input[type="radio"]:not(:checked):hover + label::after {
+  opacity: 0.5;
+}
+.custom-radio form input[type="radio"]:checked + label {
+  color: #057eff;
+}
+
+/* (3) Scrolling To Top 33333333333333333 */
+.up {
+  color: #fff;
+  background: brown;
+  position: fixed;
+  bottom: 15px;
+  right: -30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
